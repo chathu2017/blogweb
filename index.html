@@ -23,6 +23,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin: 40px auto;
+      display: none;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    </style>
 </head>
 
 <body class="light-theme">
@@ -786,7 +803,8 @@
     </div>
 
   </main>
-
+  <div id="loader" class="loader"></div>
+  <div class="blog-card-group" id="blog-card-group"></div>
 
 
 
@@ -871,6 +889,7 @@
   <!--
     - custom js link
   -->
+  <script src="./js/script.js"></script>
   <script src="./js/script.min.js"></script>
 
   <!--
