@@ -1,0 +1,19 @@
+name: Workflow-test-3
+on: workflow_dispath
+jobs:
+  stage-01(Init):
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing
+        run: echo "Tesing stage"
+      - name: Building
+        run: echo "Bulding stage"
+  stage-02(Containerlized):
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dockerlized
+        run: echo "Docker buld"
+      - name: push-to-ACR
+        run: echo "Docker push"
+        
+        
