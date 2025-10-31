@@ -14,5 +14,6 @@ jobs:
       - name: Dockerlized
         run: echo "Dockerlized"
       - name: Finalized
-        run: echo "Finalized all"
-        run: echo "Dockerniwantha"
+        run: |
+          echo "Finalized all"
+          echo "Dockerniwantha"
