@@ -1,0 +1,17 @@
+name: niwantha-stage2-test
+on: workflow_dispatch
+jobs:
+  first-job-Init:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing-Step
+        run: echo "This is for testing"
+      - name: Pipeline-Initialized
+        run: echo "Pipeline initialized done!!!"
+  secound-job-Docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dockerlized
+        run: echo "Dockerlized"
+      - name: Finalized
+        run : echo "Finalized all"
